@@ -6,7 +6,7 @@ public class Client {
 
         st.name="Harish";
         st.age=10;
-        st.psp=20;
+        st.psp=92;
         st.batchid=20;
     }
 }
