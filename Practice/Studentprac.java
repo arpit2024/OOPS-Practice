@@ -9,7 +9,7 @@ public class Studentprac {
         st.name="prasad";
         st.age=10;
         st.psp=20;
-        st.batchid=22;
+        st.batchid=20;
 
 
     }
