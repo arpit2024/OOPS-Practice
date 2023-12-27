@@ -6,10 +6,10 @@ public class Studentprac {
 
         Studentprac st=new Studentprac();
 
-        st.name="prasad";
-        st.age=10;
-        st.psp=20;
-        st.batchid=20;
+//        st.name="prasad";
+//        st.age=10;
+//        st.psp=20;
+//        st.batchid=20;
 
 
     }
