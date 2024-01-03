@@ -1,70 +1,77 @@
 package MergeSort;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class MergeSorter implements Callable<List<Integer>> {
+    private List<Integer> arrayToSort;
+    private ExecutorService executor;
 
-    private List<Integer> arrToSort;
-
-    MergeSorter(List<Integer> arrToSort){
-        this.arrToSort=arrToSort;
+    MergeSorter(List<Integer> arrayToSort, ExecutorService executor) {
+        this.arrayToSort = arrayToSort;
+        this.executor = executor;
     }
-
     @Override
     public List<Integer> call() throws Exception {
-        if(arrToSort.size()<=1){
+        //Logic of Merge Sort
+        if (arrayToSort.size() <= 1) {
             System.out.println("DEBUG");
-            // a debug point was used here to check how many thread was
-            // used while running the code without executor(so only main was used)
-            return arrToSort;
+// a debug point was used here to check how many thread was
+// used while running the code without executor(so only main was used)
+
+            return arrayToSort;
         }
 
-        int mid=arrToSort.size()/2;
-        ArrayList<Integer> leftArr=new ArrayList<>();
-        ArrayList<Integer> rightArr=new ArrayList<>();
+        int mid = arrayToSort.size() / 2;
+        List<Integer> leftArray = new ArrayList<>();
+        List<Integer> rightArray = new ArrayList<>();
 
-        for(int i=0;i<mid;i++){
-            leftArr.add(arrToSort.get(i));
+        for (int i = 0; i < mid; i++) {
+            leftArray.add(arrayToSort.get(i));
         }
 
-        for(int i=mid;i<arrToSort.size();i++){
-            rightArr.add(arrToSort.get(i));
+        for (int i = mid; i < arrayToSort.size(); i++) {
+            rightArray.add(arrayToSort.get(i));
         }
-        // creating MergeSorter objects to call the call Method.
-        MergeSorter leftMergeSorter=new MergeSorter(leftArr);
-        MergeSorter rightMergeSorter=new MergeSorter(rightArr);
 
-        List<Integer> leftSortedArray=leftMergeSorter.call();
-        List<Integer> rightSortedArray=rightMergeSorter.call();
+        MergeSorter leftMergeSorter = new MergeSorter(leftArray, executor);
+        MergeSorter rightMergeSorter = new MergeSorter(rightArray, executor);
 
+        //ExecutorService executor = Executors.newCachedThreadPool(); //creating a pool
 
-        List<Integer> sortedArray=new ArrayList<>();
+        Future<List<Integer>> leftSortedArrayFuture =  executor.submit(leftMergeSorter);
+        Future<List<Integer>> rightSortedArrayFuture = executor.submit(rightMergeSorter);
 
-        //Merging Two Sorted lists starts from here
-        int i=0,j=0;
-        while(i<leftSortedArray.size() && j<rightSortedArray.size()){
-            if(leftSortedArray.get(i)<rightSortedArray.get(j)){
+        List<Integer> leftSortedArray = leftSortedArrayFuture.get();
+        List<Integer> rightSortedArray = rightSortedArrayFuture.get();
+
+        List<Integer> sortedArray = new ArrayList<>();
+
+        int i = 0, j = 0;
+        while (i < leftSortedArray.size() && j < rightSortedArray.size()) {
+            if (leftSortedArray.get(i) < rightSortedArray.get(j)) {
                 sortedArray.add(leftSortedArray.get(i));
                 i++;
-            }
-            else{
+            } else {
                 sortedArray.add(rightSortedArray.get(j));
                 j++;
             }
         }
-
-        while(i<leftSortedArray.size()){
+        while (i < leftSortedArray.size()) {
             sortedArray.add(leftSortedArray.get(i));
             i++;
         }
-        while(j<rightSortedArray.size()){
+
+        while (j < rightSortedArray.size()) {
             sortedArray.add(rightSortedArray.get(j));
             j++;
         }
 
         return sortedArray;
     }
-
 }
