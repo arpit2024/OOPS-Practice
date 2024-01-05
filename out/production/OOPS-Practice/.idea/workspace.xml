@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4727db7b-29e2-4180-b9f6-35dff7399681" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/introToSynchronization/Adder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/introToSynchronization/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/introToSynchronization/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/introToSynchronization/Subtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Adder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Subtractor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/ADMIN/IdeaProjects/OOPS-Practice/AdderSubtractorLock",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +55,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\IdeaProjects\OOPS-Practice\AdderSubtractorLock" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.xyz">
     <configuration name="Instructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Inheritance.Instructor" />
@@ -110,7 +116,8 @@
       <workItem from="1704208364113" duration="4651000" />
       <workItem from="1704289555728" duration="6303000" />
       <workItem from="1704310874702" duration="675000" />
-      <workItem from="1704378157618" duration="1207000" />
+      <workItem from="1704378157618" duration="3293000" />
+      <workItem from="1704466004434" duration="415000" />
     </task>
     <servers />
   </component>
