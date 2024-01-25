@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4727db7b-29e2-4180-b9f6-35dff7399681" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Adder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdderSubtractorLock/Subtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolyMorphism/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolyMorphism/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolyMorphism/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolyMorphism/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StringsPractice/StringsPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StringsPractice/client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practicingTryCatch/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOPS-Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOPS-Practice/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -35,32 +40,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "C:/Users/ADMIN/IdeaProjects/OOPS-Practice/AdderSubtractorLock",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propDebugger",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/IdeaProjects/OOPS-Practice/AdderSubtractorLock&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ADMIN\IdeaProjects\OOPS-Practice\AdderSubtractorLock" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.xyz">
+  <component name="RunManager">
     <configuration name="Instructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Inheritance.Instructor" />
       <module name="OOPS-Practice" />
@@ -117,7 +123,12 @@
       <workItem from="1704289555728" duration="6303000" />
       <workItem from="1704310874702" duration="675000" />
       <workItem from="1704378157618" duration="3293000" />
-      <workItem from="1704466004434" duration="415000" />
+      <workItem from="1704466004434" duration="3238000" />
+      <workItem from="1704622025561" duration="1776000" />
+      <workItem from="1704651426463" duration="1271000" />
+      <workItem from="1704788580582" duration="790000" />
+      <workItem from="1705215345607" duration="3363000" />
+      <workItem from="1705747469970" duration="266000" />
     </task>
     <servers />
   </component>
